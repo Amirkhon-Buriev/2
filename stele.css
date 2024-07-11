@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: wheat;
+    padding: 10px;
+    justify-content: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background: aqua;
+    text-align: center;
+}
+
+@media (max-width:992px) {
+    .box {
+        background: blue;
+    }
+
+    body {
+        background: black;
+    }
+}
+
+@media (max-width:576px) {
+    .box {
+        background: yellow;
+    }
+
+    body {
+        background: rgb(170, 110, 110);
+    }
+}
